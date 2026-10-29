@@ -152,3 +152,4 @@ footer {
   .row .when { text-align: left; }
   footer { padding: 24px 16px 36px; }
 }
+.emails { margin: 0; text-align: left; line-height: 2; }
