@@ -4,203 +4,45 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Francisco Cueto Alava</title>
-<meta name="description" content="Francisco Cueto Alava, PhD Candidate in Economics at the University of Sussex. Applied microeconomics, economics of crime, political economy and development. On the 2026–2027 job market.">
-<meta property="og:title" content="Francisco Cueto Alava | Economist">
-<meta property="og:description" content="PhD Candidate in Economics, University of Sussex. On the 2026–2027 job market.">
+<meta name="description" content="Francisco Cueto Alava, PhD Candidate in Economics at the University of Sussex. Applied microeconomics, economics of crime, political economy and development economics.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Source+Sans+3:ital,wght@0,400;0,600;0,700;1,400&family=Source+Serif+4:opsz,wght@8..60,500;8..60,600;8..60,700&display=swap" rel="stylesheet">
-<style>
-  :root {
-    --bg: #fbfaf7;
-    --surface: #ffffff;
-    --ink: #1c2126;
-    --muted: #5b6570;
-    --line: #e4e1da;
-    --accent: #1f5f5b;
-    --accent-soft: #e6f0ee;
-    --highlight: #fff4d6;
-    --shadow: 0 1px 2px rgba(20,30,40,.05), 0 4px 16px rgba(20,30,40,.05);
-  }
-  @media (prefers-color-scheme: dark) {
-    :root:not([data-theme="light"]) {
-      --bg: #14181c;
-      --surface: #1b2026;
-      --ink: #e7e9ec;
-      --muted: #a1a9b3;
-      --line: #2c333b;
-      --accent: #7cc4bc;
-      --accent-soft: #1d3331;
-      --highlight: #3a3220;
-      --shadow: none;
-    }
-  }
-  :root[data-theme="dark"] {
-    --bg: #14181c; --surface: #1b2026; --ink: #e7e9ec; --muted: #a1a9b3;
-    --line: #2c333b; --accent: #7cc4bc; --accent-soft: #1d3331; --highlight: #3a3220; --shadow: none;
-  }
-
-  * { box-sizing: border-box; }
-  html { scroll-behavior: smooth; scroll-padding-top: 72px; }
-  body {
-    margin: 0; background: var(--bg); color: var(--ink);
-    font: 17px/1.65 "Source Sans 3", system-ui, sans-serif;
-    -webkit-font-smoothing: antialiased;
-  }
-  a { color: var(--accent); text-decoration-thickness: 1px; text-underline-offset: 3px; }
-  a:hover { text-decoration-thickness: 2px; }
-  h1, h2, h3 { font-family: "Source Serif 4", Georgia, serif; line-height: 1.25; margin: 0; }
-
-  /* Nav */
-  .nav {
-    position: sticky; top: 0; z-index: 10;
-    background: color-mix(in srgb, var(--bg) 88%, transparent);
-    backdrop-filter: blur(8px); border-bottom: 1px solid var(--line);
-  }
-  .nav-inner {
-    max-width: 880px; margin: 0 auto; padding: 14px 20px;
-    display: flex; align-items: center; justify-content: space-between; gap: 16px;
-  }
-  .nav-name { font-family: "Source Serif 4", serif; font-weight: 600; color: var(--ink); text-decoration: none; white-space: nowrap; }
-  .nav-links { display: flex; gap: 20px; flex-wrap: wrap; justify-content: flex-end; }
-  .nav-links a { color: var(--muted); text-decoration: none; font-size: 15px; font-weight: 600; }
-  .nav-links a:hover { color: var(--accent); }
-
-  main { max-width: 880px; margin: 0 auto; padding: 0 20px 64px; }
-
-  /* Hero */
-  .hero {
-    display: grid; grid-template-columns: 180px 1fr; gap: 40px; align-items: start;
-    padding: 56px 0 44px; border-bottom: 1px solid var(--line);
-  }
-  .photo {
-    width: 180px; height: 180px; border-radius: 50%; overflow: hidden; position: relative;
-    background: var(--accent-soft); color: var(--accent);
-    display: grid; place-items: center;
-    font: 600 54px "Source Serif 4", serif; letter-spacing: 1px;
-  }
-  .photo img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; }
-  .badge {
-    display: inline-block; background: var(--accent-soft); color: var(--accent);
-    font-size: 13px; font-weight: 700; letter-spacing: .06em; text-transform: uppercase;
-    padding: 4px 12px; border-radius: 999px; margin-bottom: 14px;
-  }
-  .hero h1 { font-size: clamp(32px, 5vw, 44px); font-weight: 700; }
-  .role { font-size: 19px; color: var(--muted); margin: 6px 0 18px; }
-  .role strong { color: var(--ink); font-weight: 600; }
-  .hero p { margin: 0 0 14px; }
-  .btns { display: flex; flex-wrap: wrap; gap: 10px; margin-top: 22px; }
-  .btn {
-    display: inline-flex; align-items: center; gap: 6px;
-    padding: 8px 16px; border-radius: 8px; border: 1px solid var(--line);
-    background: var(--surface); color: var(--ink); text-decoration: none;
-    font-size: 15px; font-weight: 600; box-shadow: var(--shadow);
-  }
-  .btn:hover { border-color: var(--accent); color: var(--accent); }
-  .btn.primary { background: var(--accent); border-color: var(--accent); color: var(--bg); }
-  .btn.primary:hover { opacity: .9; color: var(--bg); }
-
-  .facts {
-    display: grid; grid-template-columns: repeat(3, 1fr); gap: 24px;
-    padding: 28px 0; border-bottom: 1px solid var(--line); font-size: 15.5px;
-  }
-  .facts h3 { font-family: "Source Sans 3", sans-serif; font-size: 13px; letter-spacing: .08em; text-transform: uppercase; color: var(--muted); margin-bottom: 6px; }
-  .facts p { margin: 0; }
-
-  /* Sections */
-  section { padding: 48px 0 8px; }
-  section > h2 { font-size: 28px; margin-bottom: 24px; display: flex; align-items: baseline; gap: 12px; }
-  section > h2::after { content: ""; flex: 1; height: 1px; background: var(--line); }
-  h3.sub { font-family: "Source Sans 3", sans-serif; font-size: 14px; letter-spacing: .08em; text-transform: uppercase; color: var(--muted); margin: 32px 0 12px; }
-
-  .jmp {
-    background: var(--surface); border: 1px solid var(--line); border-left: 4px solid var(--accent);
-    border-radius: 10px; padding: 26px 28px; box-shadow: var(--shadow);
-  }
-  .jmp .label { font-size: 13px; font-weight: 700; letter-spacing: .08em; text-transform: uppercase; color: var(--accent); }
-  .jmp h3 { font-size: 23px; margin: 8px 0 6px; }
-  .meta { color: var(--muted); font-size: 15px; }
-  .jmp p.abstract { margin: 14px 0 0; }
-  .links { margin-top: 12px; display: flex; gap: 16px; flex-wrap: wrap; font-size: 15px; font-weight: 600; }
-
-  .item { padding: 14px 0; border-bottom: 1px solid var(--line); }
-  .item:last-child { border-bottom: 0; }
-  .item .title { font-weight: 600; }
-  .item .title em { font-weight: 600; }
-  .me { font-weight: 700; }
-  details { margin-top: 6px; font-size: 15.5px; }
-  summary { cursor: pointer; color: var(--accent); font-weight: 600; font-size: 15px; }
-
-  .row { display: grid; grid-template-columns: 1fr auto; gap: 4px 20px; padding: 14px 0; border-bottom: 1px solid var(--line); }
-  .row:last-child { border-bottom: 0; }
-  .row .when { color: var(--muted); font-size: 15px; white-space: nowrap; text-align: right; }
-  .row .what { grid-column: 1 / -1; color: var(--muted); font-size: 15.5px; }
-  .row .org { font-weight: 600; }
-
-  .refs { display: grid; grid-template-columns: repeat(2, 1fr); gap: 16px; }
-  .ref { background: var(--surface); border: 1px solid var(--line); border-radius: 10px; padding: 16px 18px; font-size: 15.5px; }
-  .ref strong { display: block; font-size: 16.5px; }
-  .ref span { color: var(--muted); }
-
-  .contact { display: grid; grid-template-columns: repeat(2, 1fr); gap: 20px; }
-  .contact p { margin: 0 0 6px; }
-
-  footer { max-width: 880px; margin: 0 auto; padding: 24px 20px 40px; color: var(--muted); font-size: 14px; border-top: 1px solid var(--line); display: flex; justify-content: space-between; gap: 12px; flex-wrap: wrap; }
-  .theme-toggle { background: none; border: 1px solid var(--line); color: var(--muted); border-radius: 6px; padding: 2px 10px; font: inherit; cursor: pointer; }
-
-  @media (max-width: 720px) {
-    body { font-size: 16.5px; }
-    .nav-inner { padding: 12px 16px; }
-    .nav-links { gap: 14px; }
-    .nav-links a.opt { display: none; }
-    main { padding: 0 16px 48px; }
-    .hero { grid-template-columns: 1fr; gap: 22px; padding: 36px 0 32px; }
-    .photo { width: 120px; height: 120px; font-size: 38px; }
-    .facts, .refs, .contact { grid-template-columns: 1fr; gap: 16px; }
-    .jmp { padding: 20px; }
-    .row { grid-template-columns: 1fr; }
-    .row .when { text-align: left; }
-    footer { padding: 24px 16px 36px; }
-  }
-</style>
+<link rel="stylesheet" href="style.css">
 </head>
 <body>
 
 <nav class="nav">
   <div class="nav-inner">
-    <a class="nav-name" href="#top">Francisco Cueto Alava</a>
+    <a class="nav-name" href="index.html">Francisco Cueto Alava</a>
     <div class="nav-links">
-      <a href="#research">Research</a>
-      <a href="#teaching" class="opt">Teaching</a>
-      <a href="#experience" class="opt">Experience</a>
+      <a href="research.html">Research</a>
+      <a href="teaching.html">Teaching</a>
+      <a href="experience.html">Experience</a>
       <a href="cv.pdf">CV</a>
-      <a href="#contact">Contact</a>
+      <a href="index.html#contact">Contact</a>
     </div>
   </div>
 </nav>
 
-<main id="top">
+<main>
 
-  <!-- ============ HERO ============ -->
   <header class="hero">
     <div class="photo" aria-hidden="true">
       FC
-      <!-- Sube una foto llamada photo.jpg al repositorio y aparecerá aquí -->
       <img src="photo.jpg" alt="" onerror="this.remove()">
     </div>
-    <div>
-      <span class="badge">On the 2026–2027 Job Market</span>
+    <div class="bio">
       <h1>Francisco Cueto Alava</h1>
       <p class="role"><strong>PhD Candidate in Economics</strong>, University of Sussex</p>
-      <p>I am an applied microeconomist working on the economics of crime, political economy and development, with a focus on Peru. My research studies how crime, migration and the way public policies are delivered shape citizens' trust in public institutions and political accountability.</p>
-      <p>Before the PhD, I spent more than nine years designing and running impact evaluations for Peruvian ministries. I am also Research Faculty at Universidad Peruana de Ciencias Aplicadas (UPC) and a Doctoral Tutor at Sussex.</p>
+      <p>I am an applied microeconomist working on the economics of crime, political economy and development economics. My research studies how crime, migration and the delivery of public policies shape citizens' trust in public institutions and political accountability, using quasi-experimental methods and linked survey and administrative data.</p>
+      <p>Before the PhD, I spent more than nine years designing and running impact evaluations for government ministries. I am currently Research Faculty at Universidad Peruana de Ciencias Aplicadas (UPC) and a Doctoral Tutor at the University of Sussex.</p>
       <div class="btns">
         <a class="btn primary" href="cv.pdf">CV (PDF)</a>
-        <a class="btn" href="#jmp">Job Market Paper</a>
-        <a class="btn" href="mailto:J.Cueto-Alava@sussex.ac.uk">Email</a>
+        <a class="btn" href="research.html#jmp">Job Market Paper</a>
+        <a class="btn" href="#contact">Email</a>
         <a class="btn" href="https://orcid.org/0000-0002-9220-3301">ORCID</a>
-        <!-- Reemplaza ENLACE-GOOGLE-SCHOLAR por tu enlace (o borra esta línea) -->
-        <a class="btn" href="ENLACE-GOOGLE-SCHOLAR">Google Scholar</a>
+        <a class="btn" href="https://sites.google.com/view/franciscocuetoalava/home">Google Site</a>
       </div>
     </div>
   </header>
@@ -208,152 +50,64 @@
   <div class="facts">
     <div>
       <h3>Fields</h3>
-      <p>Applied Microeconomics, Economics of Crime, Political Economy, Development Economics</p>
+      <p>Applied Microeconomics<br>Economics of Crime<br>Political Economy<br>Development Economics</p>
     </div>
     <div>
       <h3>Supervisors</h3>
-      <p>Richard Dickens<br>Barry Reilly</p>
+      <p>Professor Richard Dickens<br>Professor Barry Reilly</p>
     </div>
     <div>
       <h3>Expected completion</h3>
-      <p>PhD Economics, 2027<br><span class="meta">Thesis submission May–June 2027</span></p>
+      <p>PhD in Economics, 2027<br><span class="meta">Thesis submission May&ndash;June 2027</span></p>
     </div>
   </div>
 
-  <!-- ============ RESEARCH ============ -->
-  <section id="research">
-    <h2>Research</h2>
-
-    <article class="jmp" id="jmp">
-      <div class="label">Job Market Paper</div>
-      <h3>Designed Nationally, Blamed Locally: Implementation Failure and Trust in Government in Peru</h3>
-      <div class="meta">Single-authored · October 2026 draft</div>
-      <p class="abstract">When a nationally designed programme fails at the point of local delivery, which tier of government do citizens blame? I exploit a 2015 administrative failure that interrupted Peru's national school feeding programme, Qali Warma, in 22% of districts, where design and financing were national but procurement involved municipalities. Using difference-in-differences on matched districts, I find that trust in the district municipality fell by 5.8–6.4 percentage points (29–32%), while evaluations of the central government and the Ministry of Education were unchanged; electoral data suggest the penalty carried into the next municipal election. Decentralising implementation shifts the political risk of failure onto local governments.</p>
-      <div class="links">
-        <!-- Sube el PDF a la carpeta papers/ con este nombre -->
-        <a href="papers/Cueto-Alava_JMP.pdf">Paper (PDF)</a>
-      </div>
-    </article>
-
-    <h3 class="sub">Working papers</h3>
-    <div class="item">
-      <div class="title">Migration Shocks, Institutional Capacity, and the Erosion of Public Trust</div>
-      <div class="meta">Single-authored · October 2026 draft</div>
+  <section id="education">
+    <h2>Education</h2>
+    <div class="row">
+      <div><span class="org">University of Sussex, United Kingdom</span> &middot; <span class="pos">PhD in Economics</span></div>
+      <div class="when">2023&ndash;2027 (expected)</div>
+      <div class="what">Supervisors: Professor Richard Dickens and Professor Barry Reilly.</div>
     </div>
-    <div class="item">
-      <div class="title">Does Bringing the State Closer Increase Trust in Public Institutions? Evidence from the Tambos Platform in Rural Peru</div>
-      <div class="meta">With Richard Dickens · Preliminary manuscript</div>
+    <div class="row">
+      <div><span class="org">University of Sussex, United Kingdom</span> &middot; <span class="pos">MSc in Development Economics (Distinction)</span></div>
+      <div class="when">2021&ndash;2022</div>
     </div>
-
-    <h3 class="sub">Peer-reviewed publications</h3>
-    <div class="item">
-      <div class="title">The social costs of crime: the erosion of trust between citizens and public institutions</div>
-      <div class="meta">With A. Cozzubo and E. Amaya · <em>Economics of Governance</em>, 22(2), 93–117, 2021 · <a href="https://doi.org/10.1007/s10101-021-00251-0">doi</a></div>
-    </div>
-    <div class="item">
-      <div class="title">Can public credit programs improve artisanal fisher performance? The case of FONDEPES, a credit program</div>
-      <div class="meta">With L. Alvarez, G. Arcaya and R. de la Torre · <em>Marine Policy</em>, 156, 105792, 2023 · <a href="https://doi.org/10.1016/j.marpol.2023.105792">doi</a></div>
-    </div>
-
-    <h3 class="sub">Research in progress</h3>
-    <div class="item">
-      <div class="title">Can a mining formalization strategy reduce crime in Peru? Evidence from REINFO, 2010–2019</div>
-      <div class="meta">With Brandon Laureano</div>
-    </div>
-    <div class="item">
-      <div class="title">Indirect Effects of the JUNTOS Program: Evidence on Infant and Childhood Mortality</div>
-      <div class="meta">With Guillermo Jopén</div>
-    </div>
-    <div class="item">
-      <div class="title">Minimum-Wage Increases, Formal Employment and Wages in Peru</div>
-      <div class="meta">With Viviana Cruzado and Giancarlos Rivera</div>
-    </div>
-    <div class="item">
-      <div class="title">Community Mental Health Care and Psychological Well-being</div>
-      <div class="meta">With Elard Amaya</div>
-    </div>
-
-    <h3 class="sub">Selected policy research</h3>
-    <div class="item">
-      <div class="title">Is hotspot policing effective in Peru? Evidence from Barrio Seguro</div>
-      <div class="meta">With E. Amaya, A. Cozzubo and W. Hernández · Policy report, CIES, 2021</div>
-    </div>
-    <div class="item">
-      <div class="title">Feed Me Sustainably: Improving the sustainability of public food procurement programmes using threatened crop diversity</div>
-      <div class="meta">With A. Drucker, M. Ramírez et al. · Policy Brief No. 67, Bioversity International, 2022</div>
-    </div>
-    <div class="item">
-      <div class="title">Design and results evaluation of PROCOMPITE</div>
-      <div class="meta">With A. Hopkins and J. Arcaya · Evaluation report, Ministry of Production (PRODUCE), Peru, 2019</div>
+    <div class="row">
+      <div><span class="org">Pontificia Universidad Cat&oacute;lica del Per&uacute;</span> &middot; <span class="pos">BA in Economics</span></div>
+      <div class="when">2010&ndash;2016</div>
     </div>
   </section>
 
-  <!-- ============ TEACHING ============ -->
-  <section id="teaching">
-    <h2>Teaching</h2>
-    <div class="row">
-      <div><span class="org">Universidad Peruana de Ciencias Aplicadas (UPC)</span> · Research Faculty, Economics</div>
-      <div class="when">2026–present</div>
-      <div class="what">Supervise eight undergraduate research students; coordinate the economics research seminars.</div>
-    </div>
-    <div class="row">
-      <div><span class="org">University of Sussex</span> · Doctoral Tutor, Economics</div>
-      <div class="when">2025–present</div>
-      <div class="what">Introduction to Economics; Microeconomics I.</div>
-    </div>
-    <div class="row">
-      <div><span class="org">Universidad Peruana de Ciencias Aplicadas (UPC)</span> · Lecturer, Economics</div>
-      <div class="when">2023–2026</div>
-      <div class="what">Behavioural Economics; undergraduate thesis supervision.</div>
-    </div>
+  <section id="awards">
+    <h2>Grants, Awards &amp; Scholarships</h2>
+    <div class="row"><div>Annual Research Awards (competitive funding), CIES, Peru</div><div class="when">2018, 2020, 2023, 2024</div></div>
+    <div class="row"><div>Scholarship, ICID International School on Impact Evaluation of Development Policies</div><div class="when">2024</div></div>
+    <div class="row"><div>Beca Generaci&oacute;n del Bicentenario (PRONABEC), doctoral scholarship</div><div class="when">2023</div></div>
+    <div class="row"><div>Sussex Chancellor's International and EU Scholarship; Business School International Masters Award</div><div class="when">2021</div></div>
+    <div class="row"><div>CEDLAS scholarship for training in public policy impact evaluation</div><div class="when">2016</div></div>
   </section>
 
-  <!-- ============ EXPERIENCE ============ -->
-  <section id="experience">
-    <h2>Research &amp; Policy Experience</h2>
-    <div class="row">
-      <div><span class="org">London School of Economics</span> · Research Assistant, Department of Management</div>
-      <div class="when">2024–2025</div>
-      <div class="what">Randomised evaluation of a microfinance project in East Africa: data processing, literature review and econometric analysis.</div>
-    </div>
-    <div class="row">
-      <div><span class="org">Youth Endowment Fund (UK)</span> · Evaluation management</div>
-      <div class="when">2023–2024</div>
-      <div class="what">Managed three violence-prevention evaluations, overseeing independent evaluators' protocols, analysis plans and reports.</div>
-    </div>
-    <div class="row">
-      <div><span class="org">Peruvian Government</span> · Impact evaluation roles at the Ministries of Economy and Finance, Production, Development and Social Inclusion, Transport, and Labour</div>
-      <div class="when">2015–2021</div>
-      <div class="what">Designed DiD, PSM and RCT evaluations of programmes including JUNTOS, Cuna Más, PROCOMPITE and local-government tax systems; sampling, power calculations, survey instruments and fieldwork management.</div>
-    </div>
-
-    <h3 class="sub">Selected presentations</h3>
-    <p><strong>2026:</strong> Freiburg PhD Workshop on the Economics of Criminal Behavior (Max Planck Institute); RES Annual Conference; RES Job Market Workshop; Southern PhD Economics Conference (Southampton); PhD Conference in Economics (Tor Vergata); PhD Economics Workshop (Sussex).</p>
-    <p><strong>2025:</strong> RES Annual Conference; 18th Workshop on Social Economy for Young Economists (Bologna); III PhD Conference in Social Sciences and Economics (Sapienza University of Rome).</p>
-
-    <h3 class="sub">Awards &amp; scholarships</h3>
-    <p>CIES Annual Research Awards (2018, 2020, 2023, 2024) · PRONABEC Beca Generación del Bicentenario, doctoral scholarship (2023) · ICID International School on Impact Evaluation scholarship (2024) · Sussex Chancellor's International Scholarship (2021) · CEDLAS scholarship (2016)</p>
-  </section>
-
-  <!-- ============ REFERENCES ============ -->
   <section id="references">
     <h2>References</h2>
     <div class="refs">
-      <div class="ref"><strong>Prof. Richard Dickens</strong><span>Professor of Economics, University of Sussex</span></div>
-      <div class="ref"><strong>Prof. Barry Reilly</strong><span>Professor of Econometrics, University of Sussex</span></div>
-      <div class="ref"><strong>Prof. Andy McKay</strong><span>Professor of Development Economics, University of Sussex</span></div>
+      <div class="ref"><strong>Professor Richard Dickens</strong><span>Professor of Economics, University of Sussex</span></div>
+      <div class="ref"><strong>Professor Barry Reilly</strong><span>Professor of Econometrics, University of Sussex</span></div>
+      <div class="ref"><strong>Professor Andy McKay</strong><span>Professor of Development Economics, University of Sussex</span></div>
       <div class="ref"><strong>Dr Viviana Cruzado</strong><span>Director of Design and Methodology, OFIS (Peru)</span></div>
     </div>
     <p class="meta" style="margin-top:14px">Contact details are listed in my <a href="cv.pdf">CV</a>.</p>
   </section>
 
-  <!-- ============ CONTACT ============ -->
   <section id="contact">
     <h2>Contact</h2>
     <div class="contact">
       <div>
-        <p><strong>Email</strong><br><a href="mailto:J.Cueto-Alava@sussex.ac.uk">J.Cueto-Alava@sussex.ac.uk</a></p>
+        <p><strong>Email</strong><br>
+          <a href="mailto:J.Cueto-Alava@sussex.ac.uk">J.Cueto-Alava@sussex.ac.uk</a> <span class="meta">(University of Sussex)</span><br>
+          <a href="mailto:juan.cueto@upc.pe">juan.cueto@upc.pe</a> <span class="meta">(UPC)</span></p>
         <p><strong>ORCID</strong><br><a href="https://orcid.org/0000-0002-9220-3301">0000-0002-9220-3301</a></p>
+        <p><strong>Google Site</strong><br><a href="https://sites.google.com/view/franciscocuetoalava/home">sites.google.com/view/franciscocuetoalava</a></p>
       </div>
       <div>
         <p><strong>Address</strong><br>Department of Economics<br>University of Sussex Business School<br>Falmer, Brighton BN1 9SL, United Kingdom</p>
@@ -364,17 +118,16 @@
 </main>
 
 <footer>
-  <span>© 2026 Francisco Cueto Alava · Last updated October 2026</span>
+  <span>&copy; 2026 Francisco Cueto Alava &middot; Last updated October 2026</span>
   <button class="theme-toggle" id="themeBtn" type="button">Light / Dark</button>
 </footer>
 
 <script>
   (function () {
     var root = document.documentElement, btn = document.getElementById('themeBtn');
-    try { var saved = localStorage.getItem('theme'); if (saved) root.setAttribute('data-theme', saved); } catch (e) {}
+    try { var s = localStorage.getItem('theme'); if (s) root.setAttribute('data-theme', s); } catch (e) {}
     btn.addEventListener('click', function () {
-      var cur = root.getAttribute('data-theme') ||
-        (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light');
+      var cur = root.getAttribute('data-theme') || 'dark';
       var next = cur === 'dark' ? 'light' : 'dark';
       root.setAttribute('data-theme', next);
       try { localStorage.setItem('theme', next); } catch (e) {}

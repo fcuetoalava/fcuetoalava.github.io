@@ -1,0 +1,105 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Experience | Francisco Cueto Alava</title>
+<meta name="description" content="Francisco Cueto Alava, PhD Candidate in Economics at the University of Sussex. Applied microeconomics, economics of crime, political economy and development economics.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Source+Sans+3:ital,wght@0,400;0,600;0,700;1,400&family=Source+Serif+4:opsz,wght@8..60,500;8..60,600;8..60,700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<nav class="nav">
+  <div class="nav-inner">
+    <a class="nav-name" href="index.html">Francisco Cueto Alava</a>
+    <div class="nav-links">
+      <a href="research.html">Research</a>
+      <a href="teaching.html">Teaching</a>
+      <a href="experience.html" class="active">Experience</a>
+      <a href="cv.pdf">CV</a>
+      <a href="index.html#contact">Contact</a>
+    </div>
+  </div>
+</nav>
+
+<main>
+
+  <header class="page-head">
+    <h1>Experience</h1>
+    <p>Research, impact evaluation and public policy experience in the United Kingdom and Peru.</p>
+  </header>
+
+  <section id="research-experience">
+    <h2>Research &amp; Impact Evaluation</h2>
+    <div class="row">
+      <div><span class="org">London School of Economics and Political Science, United Kingdom</span><br><span class="pos">Research Assistant, Department of Management</span></div>
+      <div class="when">2024&ndash;2025</div>
+      <div class="what">Contributed to research on the randomisation of a microfinance project in East Africa through data processing, literature review, and statistical and econometric analysis.</div>
+    </div>
+    <div class="row">
+      <div><span class="org">Youth Endowment Fund (YEF), United Kingdom</span><br><span class="pos">Evaluation management</span></div>
+      <div class="when">2023&ndash;2024</div>
+      <div class="what">Managed three violence-prevention evaluations (Chance UK &ndash; My Future and Spark2Life mentoring; focused deterrence), overseeing independent evaluators' protocols, analysis plans and reports.</div>
+    </div>
+  </section>
+
+  <section id="policy-experience">
+    <h2>Evaluation &amp; Policy Experience in Peru</h2>
+    <div class="row">
+      <div><span class="org">Ministry of Labour and Employment Promotion</span><br><span class="pos">Consultant (IDB-funded)</span></div>
+      <div class="when">2021</div>
+      <div class="what">Designed and estimated a difference-in-differences evaluation of minimum-wage changes on employment and earnings.</div>
+    </div>
+    <div class="row">
+      <div><span class="org">Ministry of Transport and Communications</span><br><span class="pos">Evaluation Coordinator</span></div>
+      <div class="when">2021</div>
+      <div class="what">Designed the panel difference-in-differences evaluation of the Subnational Transport Support Programme and drafted the ministry's Monitoring and Evaluation Directive.</div>
+    </div>
+    <div class="row">
+      <div><span class="org">Ministry of Economy and Finance</span><br><span class="pos">Evaluation Consultant (IDB-funded)</span></div>
+      <div class="when">2020&ndash;2021</div>
+      <div class="what">Designed the baseline sample, power calculations, survey instruments and randomised evaluation of local-government tax systems.</div>
+    </div>
+    <div class="row">
+      <div><span class="org">Ministry of Production</span><br><span class="pos">Impact Evaluation Specialist</span></div>
+      <div class="when">2018&ndash;2020</div>
+      <div class="what">Designed samples and surveys for Tu Empresa and PROCOMPITE, managed fieldwork, and co-authored the PROCOMPITE evaluation report.</div>
+    </div>
+    <div class="row">
+      <div><span class="org">Ministry of Development and Social Inclusion</span><br><span class="pos">Social Policy Evaluation Analyst</span></div>
+      <div class="when">2018</div>
+      <div class="what">Designed impact evaluations of the JUNTOS cash-transfer pilot (PSM and difference-in-differences) and Cuna M&aacute;s (RCT, PSM and difference-in-differences).</div>
+    </div>
+    <div class="row">
+      <div><span class="org">Ministry of Economy and Finance</span><br><span class="pos">Consultant, Quality of Public Expenditure</span></div>
+      <div class="when">2015&ndash;2017</div>
+      <div class="what">Supported the evaluations of EUROPAN, Beca 18 and FONIPREL, and co-drafted a multiannual budgeting framework.</div>
+    </div>
+  </section>
+
+  <div class="next"><a href="teaching.html">&larr; Teaching</a><a href="index.html#contact">Contact &rarr;</a></div>
+
+</main>
+
+<footer>
+  <span>&copy; 2026 Francisco Cueto Alava &middot; Last updated October 2026</span>
+  <button class="theme-toggle" id="themeBtn" type="button">Light / Dark</button>
+</footer>
+
+<script>
+  (function () {
+    var root = document.documentElement, btn = document.getElementById('themeBtn');
+    try { var s = localStorage.getItem('theme'); if (s) root.setAttribute('data-theme', s); } catch (e) {}
+    btn.addEventListener('click', function () {
+      var cur = root.getAttribute('data-theme') || 'dark';
+      var next = cur === 'dark' ? 'light' : 'dark';
+      root.setAttribute('data-theme', next);
+      try { localStorage.setItem('theme', next); } catch (e) {}
+    });
+  })();
+</script>
+</body>
+</html>
